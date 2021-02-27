@@ -1,9 +1,0 @@
-{
-    "ImportPath" : "sql-mvc",
-    "GoVersion" : "go1.16",
-    "GodepVersion" : "v74",
-    "Packages" : [
-        "github.com/go-sql-driver/mysql"
-    ],
-    "Deps" : []
-}
