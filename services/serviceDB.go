@@ -18,10 +18,10 @@ type player struct {
 }
 
 func dbConn() (db *sql.DB) {
-	dbDriver := "mysql"
-	dbUser := "root"
-	dbPass := "9990"
-	dbName := "team"
+	dbDriver := "mysql" // Driver sql
+	dbUser := "user"    // User db
+	dbPass := "password"// Pasword db
+	dbName := "team"    // Name of db
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
 	if err != nil {
 		panic(err.Error())
