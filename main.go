@@ -14,7 +14,7 @@ func main() {
 		port = "8000"
 	}
 
-	log.Println("Server started on: http://localhost:8080")
+	log.Println("Server started on port: " + port)
 	http.HandleFunc("/", services.Index)
 	http.HandleFunc("/show", services.Show)
 	http.HandleFunc("/new", services.New)
